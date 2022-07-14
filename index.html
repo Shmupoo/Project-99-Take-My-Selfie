@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            Collage Web App
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="style.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+
+    <body>
+        <center>
+            <h1> Voice Selfie App
+                <img id="head_img" src="myselfie (1).png">
+            </h1>
+            <br>
+            <hr>
+            <br>
+            <h4> Allow web app to use camera for app to work </h4>
+            <h4> Say: "Selfie" </h4>
+            <textarea id="textbox" readonly="true"></textarea>
+            <br>
+            <br>
+            <button class="btn btn-primary" onclick="save();"> Start </button>
+            <br>
+            <br>
+            <p> Your webcam: </p>
+            <div id="camera"></div>
+            <br>
+            <br>
+            <p> All selfies are displayed here </p>
+            <div id="resultShow">
+                <div id="result1">
+                    <img id="collage" src="c55f03cf-9995-4723-a760-0e955b280c61.jpeg">
+                </div>
+                <br>
+                <div id="result2">
+                    <img id="collage" src="f7829f7c-cda7-493e-9aa8-4597e84731df.jpeg">
+                </div>
+                <br>
+                <div id="result3">
+                    <img id="collage" src="3940bf6a-a42e-4ba2-8448-1c1a6c82b08e.jpeg">
+                </div>
+
+            </div>
+            <p id="footer"> This app was made by Shmulik </p>
+
+        </center>
+        
+        <script type="text/javascript" src="~/Scripts/webcam.min.js"></script>
+<script language="JavaScript">
+    Webcam.set({
+        width: 320,
+        height: 240,
+        image_format: 'jpeg',
+        jpeg_quality: 90
+    });
+     Webcam.attach('#Camera');
+</script>
+    </body>
+
+</html>
